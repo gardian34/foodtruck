@@ -1,0 +1,78 @@
+{% extends 'template.html.twig' %}
+{% block section %}
+    <section id="sectioncontact">
+       
+                 
+  <form> {#     DEBUT DU FORMULAIRE DE LA PAGE CONTACT   #}
+	    <h1>Contactez moi:</h1>
+	    
+    <div class="contentform">
+  
+
+
+    	<div class="leftcontact">
+{#     NOM     #}	    <div class="form-group">
+			        <p>Nom</p>
+                                    <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                                <div class="validation"></div>
+                            </div> 
+{#  FIN DE NOM     #} 
+
+
+{#  PRENOM     #}           <div class="form-group">
+                                <p>Prenom</p>
+                                    <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                                <div class="validation"></div>
+                            </div>
+{#  FIN DE PRENOM     #} 
+                 
+
+{#  E-MAIL     #}           <div class="form-group">
+                                <p>E-mail</p>	
+                                    <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                                <div class="validation"></div>
+                            </div>	
+{#  FIN DE E-MAIL     #} 
+
+	</div> {#  FIN DE LA DIV leftcontact    #} 
+
+	<div class="rightcontact">	
+
+{#  TELEPHONE     #}        <div class="form-group">
+                                <p>votre numero de telephone</p>	
+                                    <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                                <div class="validation"></div>
+                            </div>
+{#  FIN DE TELEPHONE     #} 
+
+
+
+{#  SUJECT     #}           <div class="form-group">
+                                <p>Subject de votre message</p>	
+                                    <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                                <div class="validation"></div>
+                            </div>
+{#  FIN DE SUJECT     #} 
+
+
+{#  MESSAGE     #}          <div class="form-group">
+                                <p>Message que vous souhaiter nous dire</p>
+                                    <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
+                                <div class="validation"></div>
+                            </div>	
+{#  FIN DE MESSAGE     #}    
+
+
+	</div> {#   FIN DE ID rightcontact  #}
+    </div> {#   FIN DE ID contentform  #}
+    
+<button type="submit" class="bouton-contact">Envoyez</button>
+	
+</form>{#   FIN DU FORMULAIRE  #}
+
+        </div>
+    </section>
+{% endblock %}  
+    
+    
+    

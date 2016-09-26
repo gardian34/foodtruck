@@ -1,0 +1,8 @@
+foodtruck:
+    resource: "@foodtruckBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
