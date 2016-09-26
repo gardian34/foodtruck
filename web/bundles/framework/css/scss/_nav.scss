@@ -1,0 +1,59 @@
+
+nav {
+	margin: 0px 0;
+	background-color: red;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: red;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Cacher Dropdowns par défaut */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* La hauteur de la nav principale */
+}
+	
+/*Affichage Dropdowns sur Hover*/
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+nav ul ul li {
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Changer ceci afin de changer le symbole de Dropdown */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
