@@ -12,10 +12,27 @@ header{
     margin-top: 0px;
     background-image: url(../img/header.jpg);
     background-repeat:no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 60%;
     width: 100%;
 }
 h1{
     text-align: center;
 }
+
+
+.copyright{
+    text-align: center;
+    width:100%;
+    height:auto; 
+    background-color:#171717;
+    color:#aaa;position:fixed; 
+    bottom:0px;
+    font:  12px Arial;
+    padding:5px;
+    opacity:0.4;
+    border-top:#a00 2px solid;
+    z-index:99999;
+    left:0px;
+    right:0px;}
+.copyright:hover{opacity:1}

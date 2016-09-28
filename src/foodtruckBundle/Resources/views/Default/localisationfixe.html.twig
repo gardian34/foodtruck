@@ -1,51 +1,67 @@
 {% extends 'template.html.twig' %}
 {% block section %}
     <section id="sectionlocalisation">
-        <h1> LOCALISATION  </h1>
-        
-       
-        
-        <div id="localisationfixe">
-            <h2>Les emplacements fixes</h2>
-            <div>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1sVeRwcdKAcZ7Jp3J0Ej1jk9bJbw" width="640" height="480"></iframe>
-            </div>
-            <div>
-                <li><a>LUNDI</a>
-                    <ul>
-                        <li><a href="#">MIDI</a></li>
-                        <li><a href="#">SOIR</a></li>
-                    </ul>        
-                </li>
-                
-                <li><a>MARDI</a>
-                    <ul>
-                        <li><a href="#">MIDI</a></li>
-                        <li><a href="#">SOIR</a></li>
-                    </ul>        
-                </li>
-                
-                <li><a>MERCREDI</a>
-                    <ul>
-                        <li><a href="#">MIDI</a></li>
-                        <li><a href="#">SOIR</a></li>
-                    </ul>        
-                </li>
-                
-                <li><a>JEUDI</a>
-                    <ul>
-                        <li><a href="#">MIDI</a></li>
-                        <li><a href="#">SOIR</a></li>
-                    </ul>        
-                </li>
-                
-                <li><a>VENDREDI</a>
-                    <ul>
-                        <li><a href="#">MIDI</a></li>
-                        <li><a href="#">SOIR</a></li>
-                    </ul>        
-                </li>
-            </div>
-        
+        <h1>  MAIS LIEUX OU JE SERAIT TOUT LE TEMPS (FIXE)  </h1>
+
+
+
+<table style="width:100%">
+  <tr>
+    <th>Jour de la semaine</th>
+    <th>Lieux ou sera mon camion</th>
+  </tr>
+
+{#  DEBUT DE LA LIGNE DE LUNDI #}
+  <tr>
+    <td>LUNDI</td>
+    <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN   DE LA LIGNE DE LUNDI #}
+
+
+{#  DEBUT DE LA LIGNE DE MARDI #}
+  <tr>
+    <td>MARDI</td>
+    <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN DE LA LIGNE DE MARDI #}
+
+
+{#  DEBUT DE LA LIGNE DE MERCREDI #}
+  <tr>
+    <td>MERCREDI</td>
+     <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN  DE LA LIGNE DE MERCREDI #}
+
+
+{#  DEBUT DE LA LIGNE DE JEUDI #}
+  <tr>
+    <td>JEUDI</td>
+     <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN DE LA LIGNE DE JEUDI #}
+
+{#  DEBUT DE LA LIGNE DE VENDREDI #}
+  <tr>
+    <td>VENDREDI</td>
+     <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN DE LA LIGNE DE VENDREDI #}
+
+{#  DEBUT DE LA LIGNE DE SAMEDI #}
+  <tr>
+    <td>SAMEDI</td>
+     <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN DE LA LIGNE DE SAMEDI #}
+
+{#  DEBUT DE LA LIGNE DE DIMANCHE #}
+  <tr>
+    <td>DIMANCHE</td>
+     <td> # href => lien de l'adresse </td>
+  </tr>
+{#  FIN DE LA LIGNE DE DIMANCHE #}
+</table>
     </section>
 {% endblock %}  
