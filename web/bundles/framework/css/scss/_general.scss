@@ -1,3 +1,7 @@
+/* ********************* DEBUT CSS DU SITE EN GENERAL ***************************/
+@import 'https://fonts.googleapis.com/css?family=Shrikhand';
+@import 'https://fonts.googleapis.com/css?family=Lobster+Two';
+
 body{
     background-image: url(http://img.over-blog-kiwi.com/1/21/79/69/20150323/ob_b0ac09_drapeau-usa.jpg);
     background-size: cover;
@@ -6,6 +10,7 @@ body{
 #test{
     margin-left: 10%;
     margin-right: 10%;
+    background-color: black;
     
 }
 header{
@@ -18,21 +23,27 @@ header{
 }
 h1{
     text-align: center;
+    font-size: 35px;
+    font-family: 'Shrikhand', cursive;
+    color: red;
 }
 
+#textacceuil{
+    font-family: 'Lobster Two', cursive;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 150%;
+    color: #E85B36;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 .copyright{
+    font-family: 'Shrikhand', cursive;
     text-align: center;
-    width:100%;
-    height:auto; 
-    background-color:#171717;
-    color:#aaa;position:fixed; 
-    bottom:0px;
-    font:  12px Arial;
-    padding:5px;
-    opacity:0.4;
-    border-top:#a00 2px solid;
-    z-index:99999;
-    left:0px;
-    right:0px;}
-.copyright:hover{opacity:1}
+    font-size: 1rem;
+    margin-top: 5%;
+    height: 7%;
+}
+
+/* ********************* FIN DU CSS DU SITE EN GENERAL ***************************/

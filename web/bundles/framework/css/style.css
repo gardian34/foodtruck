@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* ********************* DEBUT CSS DU SITE EN GENERAL ***************************/
+@import "https://fonts.googleapis.com/css?family=Shrikhand";
+@import "https://fonts.googleapis.com/css?family=Lobster+Two";
+@import "https://fonts.googleapis.com/css?family=Chewy";
 body {
   background-image: url(http://img.over-blog-kiwi.com/1/21/79/69/20150323/ob_b0ac09_drapeau-usa.jpg);
   background-size: cover;
@@ -6,7 +10,8 @@ body {
 
 #test {
   margin-left: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  background-color: black; }
 
 header {
   margin-top: 0px;
@@ -17,30 +22,33 @@ header {
   width: 100%; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Shrikhand', cursive;
+  color: red; }
+
+#textacceuil {
+  font-family: 'Lobster Two', cursive;
+  margin-top: 6%;
+  text-align: center;
+  font-size: 150%;
+  color: #E85B36;
+  margin-left: 5%;
+  margin-right: 5%; }
 
 .copyright {
+  font-family: 'Shrikhand', cursive;
   text-align: center;
-  width: 100%;
-  height: auto;
-  background-color: #171717;
-  color: #aaa;
-  position: fixed;
-  bottom: 0px;
-  font: 12px Arial;
-  padding: 5px;
-  opacity: 0.4;
-  border-top: #a00 2px solid;
-  z-index: 99999;
-  left: 0px;
-  right: 0px; }
+  font-size: 1rem;
+  margin-top: 5%;
+  height: 7%; }
 
-.copyright:hover {
-  opacity: 1; }
-
+/* ********************* FIN DU CSS DU SITE EN GENERAL ***************************/
+/* ********************* DEBUT DU CSS DE LA BAR DE NAVIGATION ***************************/
 nav {
+  font-family: 'Chewy', cursive;
   margin: 0px 0;
-  background-color: red; }
+  background-color: #E85B36; }
 
 nav ul {
   padding: 0;
@@ -50,18 +58,18 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  background-color: red; }
+  background-color: #E85B36; }
 
 nav a {
   display: block;
   padding: 0 10px;
-  color: #FFF;
-  font-size: 30px;
+  color: #FFFCE5;
+  font-size: 28px;
   line-height: 60px;
   text-decoration: none; }
 
 nav a:hover {
-  background-color: #000000; }
+  background-color: #D13023; }
 
 /* Cacher Dropdowns par d├®faut */
 nav ul ul {
@@ -91,6 +99,8 @@ li > a:after {
 li > a:only-child:after {
   content: ''; }
 
+/* ********************* FIN DU CSS DE LA BAR DE NAVIGATION ***************************/
+/* ********************* DEBUT DU CSS DE LA PAGE GALERIE.HTML ***************************/
 .image-box-wrapper {
   width: 100%;
   margin: 100% auto;
@@ -100,10 +110,9 @@ li > a:only-child:after {
   width: 210px;
   height: 160px;
   overflow: hidden;
-  background-color: white;
+  background-color: black;
   border: 1px solid #ccc;
   float: left;
-  margin: 1px 1px;
   font: normal normal 12px/1.4 Segoe,"Segoe UI",Arial,Sans-Serif;
   color: #333; }
 
@@ -111,7 +120,7 @@ li > a:only-child:after {
 .image-details {
   height: 150px;
   border: 5px solid white;
-  background-color: #ffc;
+  background-color: #E85B36;
   -webkit-transition: margin-top .4s ease-out .4s;
   -moz-transition: margin-top .4s ease-out .4s;
   -ms-transition: margin-top .4s ease-out .4s;
@@ -149,7 +158,6 @@ li > a:only-child:after {
   display: block;
   text-align: center;
   font-weight: bold;
-  background-color: #f9a;
   height: 26px;
   line-height: 26px;
   margin: 10px 0 0; }
@@ -163,12 +171,19 @@ li > a:only-child:after {
 .image-details .more:hover {
   background-color: black; }
 
+/* ********************* FIN DU CSS DE LA PAGE GALERIE.HTML ***************************/
+/* ********************* DEBUT DU CSS DE LA PAGE LOCALISATION.HTML ***************************/
+#sectionlocalisation {
+  margin-left: 5%;
+  margin-right: 5%; }
+
 table, th, td {
   font-size: 30px;
   text-align: center;
-  border: 3px solid black;
   background-color: white; }
 
+/* ********************* FIN DU CSS DE LA PAGE LOCALISATION.HTML ***************************/
+/* ********************* DEBUT CSS DE LA PAGE CONTACT.HTML ***************************/
 .info p {
   text-align: center;
   color: #999;
@@ -180,9 +195,9 @@ table, th, td {
 .info i {
   color: #F6AA93; }
 
-form h1 {
-  font-size: 18px;
-  background: #F6AA93 none repeat scroll 0% 0%;
+form h2 {
+  font-size: 30px;
+  background: #E85B36 none repeat scroll 0% 0%;
   color: white;
   padding: 22px 25px;
   border-radius: 5px 5px 0px 0px;
@@ -201,6 +216,7 @@ p span {
   color: #F00; }
 
 p {
+  font-size: 20px;
   margin: 0px;
   font-weight: 500;
   line-height: 2;
@@ -293,6 +309,8 @@ i {
 #sendmessage.show, .show {
   display: block; }
 
+/* ********************* FIN DU CSS DE LA PAGE CONTACT.HTML ***************************/
+/* ********************* DEBUT DU CSS DE LA PAGE INDEX.HTML ***************************/
 div#slider {
   width: 100%;
   height: 100%; }
@@ -344,6 +362,8 @@ div#slider figure {
   text-align: left;
   animation: 30s slidy infinite; }
 
+/* ********************* FIN DU CSS DE LA PAGE INDEX.HTML ***************************/
+/* ********************* DEBUT DU CSS DE LA PAGE RESERVER.HTML ***************************/
 .info p {
   text-align: center;
   color: #999;
@@ -421,7 +441,7 @@ i {
   padding: 40px 30px; }
 
 .bouton-contact {
-  background-color: #81BDA4;
+  background-color: #0085FF;
   color: #FFF;
   text-align: center;
   width: 100%;
@@ -468,5 +488,7 @@ i {
 
 #sendmessage.show, .show {
   display: block; }
+
+/* ********************* FIN DU CSS DE LA PAGE RESERVER.HTML ***************************/
 
 /*# sourceMappingURL=style.css.map */

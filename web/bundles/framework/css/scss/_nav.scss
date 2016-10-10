@@ -1,7 +1,10 @@
+/* ********************* DEBUT DU CSS DE LA BAR DE NAVIGATION ***************************/
+@import 'https://fonts.googleapis.com/css?family=Chewy';
 
 nav {
+        font-family: 'Chewy', cursive;
 	margin: 0px 0;
-	background-color: red;
+	background-color: #E85B36;
 }
 
 nav ul {
@@ -13,20 +16,20 @@ nav ul {
 	
 nav ul li {
 	display:inline-block;
-	background-color: red;
+	background-color: #E85B36;
 	}
 
 nav a {
 	display:block;
 	padding:0 10px;	
-	color:#FFF;
-	font-size:30px;
+	color:#FFFCE5;
+	font-size:28px;
 	line-height: 60px;
 	text-decoration:none;
 }
 
 nav a:hover { 
-	background-color: #000000; 
+	background-color: #D13023; 
 }
 
 /* Cacher Dropdowns par défaut */
@@ -57,3 +60,5 @@ nav ul ul ul li {
 /* Changer ceci afin de changer le symbole de Dropdown */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
+
+/* ********************* FIN DU CSS DE LA BAR DE NAVIGATION ***************************/

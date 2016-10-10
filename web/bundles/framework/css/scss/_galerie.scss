@@ -1,4 +1,4 @@
-
+/* ********************* DEBUT DU CSS DE LA PAGE GALERIE.HTML ***************************/
 .image-box-wrapper {
   width: 100%;
   margin:100% auto;
@@ -9,10 +9,9 @@
   width:210px;
   height:160px;
   overflow:hidden;
-  background-color:white;
+  background-color:black;
   border:1px solid #ccc;
   float:left;
-  margin:1px 1px;
   font:normal normal 12px/1.4 Segoe,"Segoe UI",Arial,Sans-Serif;
   color:#333;
 }
@@ -21,7 +20,8 @@
 .image-details {
   height:150px;
   border:5px solid white;
-  background-color:#ffc;
+ background-color: #E85B36;
+;
   -webkit-transition:margin-top .4s ease-out .4s;
   -moz-transition:margin-top .4s ease-out .4s;
   -ms-transition:margin-top .4s ease-out .4s;
@@ -64,7 +64,6 @@
   display:block;
   text-align:center;
   font-weight:bold;
-  background-color:#f9a;
   height:26px;
   line-height:26px;
   margin:10px 0 0;
@@ -73,3 +72,5 @@
 .image-box:hover {border-color:#bbb}
 .image-box:hover .image-container {margin-top:-160px}
 .image-details .more:hover {background-color:black}
+
+/* ********************* FIN DU CSS DE LA PAGE GALERIE.HTML ***************************/
