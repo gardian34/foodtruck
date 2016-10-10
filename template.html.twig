@@ -1,0 +1,72 @@
+<script type="text/javascript"> 
+<!-- 
+function BoutonDroit() 
+{ 
+if((event.button==2)||(event.button==3)||(event.button==4)) 
+alert('Le bouton droit refusé (HTTPS)'); 
+} 
+document.onmousedown=BoutonDroit; 
+
+//--> 
+</script><html>
+  <head>
+      <meta charset="utf-8">
+      <title>{% block title %}FOOD TRUCK{% endblock %}</title>
+      <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" type="text/css" media="all" />
+  </head>
+<body>
+    <div id="test">
+    
+    
+
+{# **************** LIEN DE LA PHOTO DU CAMION FOOD TRUCK *******************  #}
+<header>
+</header>
+
+{# **************** NAVIGATION *******************  #}
+
+<div id="container">
+    <nav>
+        <ul>
+            <li><a href="{{ path('accueil') }}">Accueil</a></li>
+            
+            
+            <li><a href="#">Menu</a>
+            <ul>
+                <li><a href="#">Bureautique</a></li>
+                <li><a href="#">Evenement</a></li>
+                <li><a href="#">Sur commande</a></li>
+            </ul>        
+            </li>
+            
+            <li><a href="{{ path('galerie') }}">Galerie photo</a></li>
+            <li><a>Ou me trouver</a>
+            <ul>
+                <li><a href="{{ path('localisationfixe') }}">Nos emplacement fixe</a></li>
+                <li><a href="{{ path('localisationevenement') }}">Les futures evenement</a></li>
+            	<ul></ul>
+            </ul>
+            </li>
+            
+            
+            <li><a href="{{ path('reserver') }}">Reserver mon camion</a></li>
+            <li><a href="{{ path('contact') }}">Contactez-nous</a></li>
+        </ul>
+    </nav>
+</div>
+
+{# **************** LIEN OU SERA LES DIFERENTE SECTION *******************  #}
+    {% block section %}
+        
+    {% endblock %}
+    
+    <footer>
+        <div class="copyright">
+            <p>Copyright&copy; 2016 <span>FOOD TRUCK - Du gourmand au gourmet
+            </span> All rights reserved.</p>
+        </div>
+  </footer> 
+    </div> {#FIN DE LA DIV test#}
+  </body>
+  
+</html>
