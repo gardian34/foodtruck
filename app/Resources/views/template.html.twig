@@ -28,7 +28,7 @@ document.onmousedown=BoutonDroit;
 <div id="container">
     <nav>
         <ul>
-            <li><a href="{{ path('accueil') }}">ACCUEIL</a></li>
+            <li><a href="{{ path('accueil') }}">Accueil</a></li>
             
             
             <li><a href="#">Menu</a>
@@ -39,7 +39,7 @@ document.onmousedown=BoutonDroit;
             </ul>        
             </li>
             
-            <li><a href="{{ path('galerie') }}">gallerie photo</a></li>
+            <li><a href="{{ path('galerie') }}">Galerie photo</a></li>
             <li><a>Ou me trouver</a>
             <ul>
                 <li><a href="{{ path('localisationfixe') }}">Nos emplacement fixe</a></li>
@@ -59,11 +59,14 @@ document.onmousedown=BoutonDroit;
     {% block section %}
         
     {% endblock %}
-    </div>
+    
+    <footer>
+        <div class="copyright">
+            <p>Copyright&copy; 2016 <span>FOOD TRUCK - Du gourmand au gourmet
+            </span> All rights reserved.</p>
+        </div>
+  </footer> 
+    </div> {#FIN DE LA DIV test#}
   </body>
-  <footer>
-      <div class="copyright">
-          <a href="#">Copyright 2016</a>
-      </div>
-  </footer>
+  
 </html>
