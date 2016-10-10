@@ -36,7 +36,7 @@ class DefaultController extends Controller
      * @Route("/contact", name="contact")
      * @Template("foodtruckBundle:Default:contact.html.twig")
      */
-    public function getcontact()
+    public function getContact()
     {}
     /**
      * @Route("/galerie", name="galerie")
@@ -50,4 +50,14 @@ class DefaultController extends Controller
      */
     public function getAdministration()
     {}
+    /**
+     * @Route("/contact", name="contact")
+     * @Template("foodtruckBundle:Default:contact.html.twig")
+     */
+    public function getContact2()
+    {}
+    /**
+     * @Route("/contact2", name="contact2")
+     * @Template("foodtruckBundle:Default:contact2.php")
+     */
 }
